@@ -1,0 +1,56 @@
+/* global.css */
+
+/* Root Variables */
+:root {
+    /* fonts */
+    --font-roboto: 'Roboto', sans-serif;
+    --font-raleway: 'Raleway', sans-serif;
+  
+    /* font sizes */
+    --font-size-lg: 18px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-xl: 20px;
+  
+    /* Colors */
+    --color-mediumaquamarine: #27af8e;
+    --white: #fff;
+    --color-darkslategray: #1b3050;
+    --light-gray: #848a9c;
+  
+    /* Border radiuses */
+    --br-xs: 12px;
+    --br-5xs: 8px;
+}
+
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+}
+
+html, body {
+    width: 100%; /* Ensure the html and body tags take up the full viewport width */
+    min-height: 100%; /* Minimum height to at least the height of the viewport */
+    font-family: var(--font-roboto); /* Default font for the website */
+    color: var(--color-darkslategray); /* Default text color */
+    line-height: normal;
+}
+
+/* Global link styles */
+a {
+    text-decoration: none; /* Remove underline from all links */
+    color: inherit; /* Links use the color of their parent by default */
+}
+
+/* Global container styles, if you use a consistent container class */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Or whatever maximum width you prefer */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px; /* Optional padding */
+}
+
+/* Add more global styles as needed */
